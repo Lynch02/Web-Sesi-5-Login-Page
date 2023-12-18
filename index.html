@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <style>
+    #root {
+      background-color: gray;
+      color: white;
+      font-size: 2em;
+      text-align: center;
+      height: 100vh;
+    }
+  </style>
+  <body>
+    <!-- Ini Konten Kita -->
+    <div id="root">
+      <input placeholder="username" id="usernameInput" />
+      <input type="password" placeholder="password" id="passwordInput" />
+      <button onclick="onLogin()" id="loginButton">LOGIN</button>
+      <button onclick="onLogout()" id="logoutButton">LOGOUT</button>
+      <a href="register.html"
+        ><button onclick="onRegister()" id="registerButton">Register</button></a
+      >
+      <br />
+      <h1 id="admin">LOGIN SEBAGAI ADMIN</h1>
+      <h1 id="basic">LOGIN SEBAGAI USER BIASA</h1>
+    </div>
+
+    <script src="index.js" type="application/javascript"></script>
+  </body>
+</html>
